@@ -1,5 +1,15 @@
 <h1> Create an article</h1>
 
+<% if @article.errors.any? %>
+  <h3> The following reasons prevented the article from being created</h3>
+  <ul>
+  <% @article.errors.full_messages.each do |msg| %>
+    <li> <%= msg %> </li>
+  <% end %>
+  </ul>
+<% end %>
+
+
 <%= form_for @article do |f| %>
 
 <p>
