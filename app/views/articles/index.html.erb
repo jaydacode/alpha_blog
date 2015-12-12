@@ -12,7 +12,7 @@
   <tr>
     <td><%= article.title %></td>
     <td><%= article.description %></td>
-    <td><%= link_to "Edit", edit_article_path(article) %> &nbsp | &nbsp </td>
+    <td> &nbsp &nbsp <%= link_to "Edit", edit_article_path(article) %> &nbsp | &nbsp </td>
     <td><%= link_to "Show", article_path(article) %>  &nbsp | &nbsp </td>
     <td><%= link_to "Delete", article_path(article), method: :delete, data: {confirm: "Are you sure?"} %></td>
   </tr>
