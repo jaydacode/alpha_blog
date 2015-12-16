@@ -1,17 +1,169 @@
 $navbar-default-bg: black;
-$navbar-margin-bottom: 0;
+$navbar-margin-bottom: 0px;
 $navbar-border-radius: 0px;
+$navbar-hover: orange;
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+
+html,
+
+body {
+  position:relative;
+	margin:auto;
+	padding:0;
+	
+}
+
+.wrapper {
+	width:100%;
+	position: absolute;
+}
+
+
+.announcement {
+  background-color:red;
+}
+
+.announcement p {
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.btn-xl {
+  font-size: 1.3em;
+  background-color: blue;
+}
+
+
+.btn {
+  background-color:red;
+  color:#fff;
+  text-transform:uppercase;
+  padding:7px 20px;
+  border:0px solid red;
+}
+ 
+.btn:hover {
+  color:#fff;
+  box-shadow:2px 2px 3px #777;
+}
+ 
+ 
+.btn-support{
+  background-color:red;
+}
+ 
+.btn-support:hover{
+  background-color:rgb(235,0,0);
+  border-bottom:2px solid black;
+}
+ 
+.center {
+  text-align: center;
+}
+ 
+ 
+/* FOOTER */
+
+.footer {
+  margin:auto;
+  position:absolute;
+  margin-bottom: 0px;
+  height: 200px;
+  padding:40px 0px 0px 0px;
+  background-color: #222;
+  width: 100%;
+}
+
+
+.footer a {
+  color: #AAA;
+}
+
+.footer a:hover {
+  color: #FFCC00;
+  text-decoration:none;
+}
+
+.footer ul {
+  list-style:none;
+}
+
+.copyright {
+  bottom:0;
+  margin: auto;
+  border-top: thin solid #333;
+  padding-top: 5px;
+  top: 15px;
+}
+
+.copyright a {
+  color: #888;
+}
+
+.copyright a:hover {
+  color: #FFCC33;
+  text-decoration:none;
+}
+
+
+/* JUMBOTRON */
+ 
+.jumbotron {
+  position:relative;
+  background-image: asset-url('railroad.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size:cover; /*sets width*/
+  height: 650px;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+ 
+.jumbotron .container {
+  position:relative;
+  top:155px;
+}
+
+
+.jumbotron h1 {
+  position: relative;
+  top: 10px;
+  text-align: center;
+  margin-right: 58px;
+}
+
+.jumbotron h2 {
+  position: relative;
+  text-align: center;
+  color:#00;
+  text-shadow: 0px 0px 0px #222;
+  font-size:28px;
+  margin-right:58px;
+}
+
+.jumbotron .btn {
+  position: relative;
+  top: 8px;
+  color: #FFF;
+  padding: 15px 25px;
+  margin-right: 60px;
+}
+
+
+/* NAVIGATION BAR TOP */
 
 #logo {
   float: left;
   font-size: 1.7em;
   color: white;
   text-transform: uppercase;
-  letter-space: -1px;
-  font-weigth: bold;
+  letter-spacing: -1px;
+  font-weight: bold;
 }
 
 #logo:hover {
@@ -19,167 +171,89 @@ $navbar-border-radius: 0px;
   text-decoration:none;
 }
 
-
-.btn {
-background-color:red;
-color:#fff;
-text-transform:uppercase;
-padding:7px 20px;
-border:0px solid red;
-}
- 
-.btn:hover {
-color:#fff;
-box-shadow:2px 2px 3px #777;
-}
- 
- 
-.btn-support{
-background-color:red;
-}
- 
-.btn-support:hover{
-background-color:rgb(235,0,0);
-border-bottom:2px solid black;
-}
- 
- 
- 
-/* Class Elements */
- 
-.jumbotron {
-margin-top: 0px;
-background-image: asset-url('railroad.jpg');
-background-repeat: no-repeat;
-background-position: center center;
-background-size:cover; /*sets width*/
-height: 640px;
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a:focus {
+    color: rgb(200, 200, 200);
 }
 
-/*.jumbotron {
-background:url(../images/railroad.jpg) no-repeat center center;
-background-size:cover;
-height:640px;
-border-top:thin solid #111;
-border-bottom:thin solid #111;
-}*/
- 
-
- 
-.jumbotron .container {
-position:relative;
-top:100px;
-text-align:center;
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: orange;
 }
 
- 
-.jumbotron h2 {
-color:#fff;
-text-shadow:0px 0px 10px #222;
-position:relative;
-top:0px;
-text-align:center;
-font-size:63px;
-}
- 
- 
-.bot h1 {
-color:#fff;
-background-color:rgba(0,0,0,0.6);
-font-size:24px;
-text-align:center;
-padding:40px 0;
-position:relative;
-margin: 0 auto;
-bottom:138px;
-}
- 
- 
-.bot a {
-color:orange;
-text-shadow: 0px 0px 2px #555;
-}
- 
- 
-.bot a:hover {
-color:orange;
-text-shadow: 0px 0px 1px #777;
-text-decoration:none;
-}
- 
- 
+
 /* ***** POPULAR CATEGORIES * *****/
+
 .popular-categories {
-                background-color:#1f1f1f;
-                padding-bottom:60px;
-                padding-top:60px;
-                position:relative;
-                bottom:138px;
+  background-color:#1f1f1f;
+  padding-bottom:60px;
+  padding-top:60px;
+  position:relative;
+  bottom:138px;
                
 }
  
- 
 .popular-categories h3{
-                color:#FFF;
-                background-color:rgba(255,255,255, 0.1);
-                font-size:24px;
-                position:relative;
-                left:45px;
-                padding:0 0;
+  color:#FFF;
+  background-color:rgba(255,255,255, 0.1);
+  font-size:24px;
+  position:relative;
+  left:45px;
+  padding:0 0;
 }
- 
  
 .popular-categories li {
-list-style:none;
-padding-top:10px;
-font-size:15px;
+  list-style:none;
+  padding-top:10px;
+  font-size:15px;
 }
- 
  
 .popular-categories a {
 color:#CCCCCC;
 }
- 
- 
+
 .popular-categories a:hover {
-color:#FFFFCC;
+  color:#FFFFCC;
 }
- 
- 
+
 .staff-picks {
-background-color:#efefef;
-border-top: 1px solid #dbdbdb;
-position:relative;
-bottom:130px;
+  background-color:#efefef;
+  border-top: 1px solid #dbdbdb;
+  position:relative;
+  bottom:130px;
 }
 
- 
 .staff-picks h2 {
-color:#393c3d;
-font-size: 24px;
+  color:#393c3d;
+  font-size: 24px;
 }
 
- 
 .staff-picks p {
-font-size:15px;
-margin-bottom:13px;
+  font-size:15px;
+  margin-top: 0px;
+  margin-bottom: 13px;
+  
 }
- 
- 
+
 .learn-more {
-background-color: #f7f7f7;
-position:relative;
-bottom:130px;
+  min-height: 125px;
+  background-color: #f7f7f7;
+  position:relative;
+  margin-top: 330; 
+  padding-bottom: 25px;
 }
 
- 
 .learn-more h3 {
-font-family: 'Shift', sans-serif;
-font-size: 18px;
-font-weight: bold;
+  font-family: 'Shift', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
 }
-
 
 .learn-more a {
-color: #00b0ff;
+  color: #00b0ff;
+}
+
+
+/* ***** TEXT ALIGN * *****/
+
+#text-center {
+  text-align: center;
 }

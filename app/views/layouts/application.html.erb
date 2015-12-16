@@ -7,14 +7,14 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-  <%= render 'layouts/messages' %>
-
-  <%= render 'layouts/nav' %>
-
-  <%# <div class="container"> %> <%# Use instead of full width %>
-
-  <%= yield %>
+  
+  
+    <%= render 'layouts/messages' %>
+    <%= render 'layouts/nav' %>
+    <%# <div class="container"> %> <%# Use instead of full width %>
+    <%= yield %>
+    <%= render 'layouts/footer' %>
+  
 
 </body>
 </html>
