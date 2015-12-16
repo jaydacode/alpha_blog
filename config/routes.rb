@@ -8,7 +8,6 @@ Rails.application.routes.draw do
 
   root 'pages#home'
   get 'pages_about', to: 'pages#about'
-  get 'pages_buttons', to: 'pages#buttons'
   
   resources :articles
 

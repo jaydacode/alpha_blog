@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default ">
+<nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -9,7 +9,6 @@
         <span class="icon-bar"></span>
       </button>
       <%= link_to "Alpha Blog", root_path, class: "navbar-brand", id: "logo" %>
-      <%# <a class="navbar-brand" id="logo" href="#">ALPHA BLOG</a> %>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -17,12 +16,11 @@
       <ul class="nav navbar-nav">
         <li><%= link_to 'About', pages_about_path %></li>
         <li><%= link_to 'Articles', articles_path %></li>
+        <li><a href="#">Link</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Actions <span class="caret"></span></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Actions <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><%= link_to "New Article", new_article_path %></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
+            <li><%= link_to "Create Article", new_article_path %></li>
             <li role="separator" class="divider"></li>
             <li><a href="#">Separated link</a></li>
             <li role="separator" class="divider"></li>
@@ -37,7 +35,7 @@
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to 'Buttons', pages_buttons_path %></li>
+        <li><a href="#">Link</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
           <ul class="dropdown-menu">
