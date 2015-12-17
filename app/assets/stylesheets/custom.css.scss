@@ -3,6 +3,7 @@ $navbar-margin-bottom: 0px;
 $navbar-border-radius: 0px;
 $navbar-hover: orange;
 
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
@@ -10,15 +11,11 @@ $navbar-hover: orange;
 html,
 
 body {
+  z-index: 0;
   position:relative;
 	margin:auto;
-	padding:0;
-	
-}
+	padding-top: 25px;
 
-.wrapper {
-	width:100%;
-	position: absolute;
 }
 
 
@@ -32,6 +29,10 @@ body {
   margin-top: 10px;
 }
 
+
+
+/* BUTTONS */
+
 .btn-xl {
   font-size: 1.3em;
   background-color: blue;
@@ -43,11 +44,13 @@ body {
   color:#fff;
   text-transform:uppercase;
   padding:7px 20px;
-  border:0px solid red;
+  border:1px solid transparent;
+  border-radius: 0px 5px 0px 5px;
 }
- 
+
 .btn:hover {
   color:#fff;
+  background-color: purple;
   box-shadow:2px 2px 3px #777;
 }
  
@@ -60,6 +63,25 @@ body {
   background-color:rgb(235,0,0);
   border-bottom:2px solid black;
 }
+
+
+.btn-nav {
+  background-color:red;
+  color:#fff;
+  text-transform:uppercase;
+  padding:7px 20px;
+  border: 1px solid transparent;
+  border-radius: 4px 4px 4px 4px;
+}
+
+
+
+
+.btn-nav:hover {
+  color:#fff;
+  background-color: orange;
+}
+
  
 .center {
   text-align: center;
@@ -69,13 +91,17 @@ body {
 /* FOOTER */
 
 .footer {
+  z-index: 101;
   margin:auto;
   position:absolute;
+  padding-top: 10px;
+  margin-top: 50px;
   margin-bottom: 0px;
   height: 200px;
   padding:40px 0px 0px 0px;
   background-color: #222;
   width: 100%;
+  display:block;
 }
 
 
@@ -171,6 +197,11 @@ body {
   text-decoration:none;
 }
 
+.navbar-default {
+  z-index: 1;
+  margin-top: 0px;
+}
+
 .navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a:focus {
     color: rgb(200, 200, 200);
 }
@@ -178,6 +209,8 @@ body {
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
     color: orange;
 }
+
+
 
 
 /* ***** POPULAR CATEGORIES * *****/
