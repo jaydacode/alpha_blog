@@ -34,8 +34,24 @@ body {
 /* BUTTONS */
 
 .btn-xl {
+  position: relative;
+  top: 17px;
   font-size: 1.3em;
-  background-color: blue;
+  background-color:red;
+  color:#fff;
+  text-transform:uppercase;
+  padding:15px 20px;
+  border:1px solid transparent;
+  border-radius: 0px 6px 0px 6px;
+  margin-right: 58px;
+}
+
+
+.btn-xl:hover {
+  color:#fff;
+  text-decoration: none;
+  background-color: orange;
+  box-shadow:2px 2px 3px #777;
 }
 
 
@@ -50,7 +66,7 @@ body {
 
 .btn:hover {
   color:#fff;
-  background-color: purple;
+  background-color: orange;
   box-shadow:2px 2px 3px #777;
 }
  
@@ -95,7 +111,7 @@ body {
   margin:auto;
   position:absolute;
   padding-top: 10px;
-  margin-top: 50px;
+  margin-top: 0px;
   margin-bottom: 0px;
   height: 200px;
   padding:40px 0px 0px 0px;
@@ -119,6 +135,7 @@ body {
 }
 
 .copyright {
+  color: #AAA;
   bottom:0;
   margin: auto;
   border-top: thin solid #333;
