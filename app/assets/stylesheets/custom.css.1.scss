@@ -92,6 +92,7 @@ body {
 
 
 
+
 .btn-nav:hover {
   color:#fff;
   background-color: orange;
@@ -117,7 +118,6 @@ body {
   background-color: #222;
   width: 100%;
   display:block;
-  clear:both;
 }
 
 
@@ -284,8 +284,10 @@ color:#CCCCCC;
 }
 
 .learn-more {
+  min-height: 125px;
   background-color: #f7f7f7;
   position:relative;
+  margin-top: 330; 
   padding-bottom: 25px;
 }
 
@@ -297,11 +299,6 @@ color:#CCCCCC;
 
 .learn-more a {
   color: #00b0ff;
-}
-
-.box:hover {
-  background:#E5E5E5;
-  height:100%;
 }
 
 
